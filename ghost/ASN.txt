@@ -1,0 +1,18 @@
+
+; <<>> DiG 9.10.6 <<>> 70.26.109.172
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45827
+;; flags: qr aa rd ra ad; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;70.26.109.172.			IN	A
+
+;; ANSWER SECTION:
+70.26.109.172.		0	IN	A	70.26.109.172
+
+;; Query time: 48 msec
+;; SERVER: 192.168.2.1#53(192.168.2.1)
+;; WHEN: Sat Jan 12 20:58:57 EST 2019
+;; MSG SIZE  rcvd: 47
+

@@ -4,6 +4,8 @@ metadata:
   name: blog
 spec:
   type: LoadBalancer
+  externalIPs:
+  - 192.168.2.116    
   selector:
     app: blog
   ports:
