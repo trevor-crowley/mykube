@@ -12,10 +12,12 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: blog-content-pvc
+  labels:
+    app: ghost
 spec:
+  storageClassName: rook-ceph-block 
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 10Mi
-  storageClassName: longhorn
