@@ -25,7 +25,7 @@ spec:
       - name: GIT_SYNC_WAIT
         value: '10'
       - name: GIT_SYNC_BRANCH
-        value: 'develop'  
+        value: develop  
       volumeMounts:
       - mountPath: "/git"
         name: www
