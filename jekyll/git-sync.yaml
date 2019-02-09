@@ -21,11 +21,15 @@ spec:
       imagePullPolicy: Always
       env:
       - name: GIT_SYNC_REPO
-        value: https://github.com/trevor-crowley/mysite.git
+        value: https://github.com/trevor-crowley/mysite2.git
+      - name: GIT_SYNC_DEST
+        value: /git
+      - name: GIT_SYNC_BRANCH
+        value: master  
+      - name: GIT_SYNC_REV
+        value: FETCH_HEAD
       - name: GIT_SYNC_WAIT
         value: '10'
-      - name: GIT_SYNC_BRANCH
-        value: develop  
       volumeMounts:
       - mountPath: "/git"
         name: www
