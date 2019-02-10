@@ -13,7 +13,7 @@ services:
   git-sync:
     image: openweb/git-sync:0.0.1
     environment:
-      GIT_SYNC_REPO: "https://github.com/trevor-crowley/mysite2.git"
+      GIT_SYNC_REPO: "https://github.com/trevor-crowley/mysite.git"
       GIT_SYNC_DEST: "/git"
       GIT_SYNC_BRANCH: "master"
       GIT_SYNC_REV: "FETCH_HEAD"
