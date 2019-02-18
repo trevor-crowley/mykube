@@ -1,0 +1,8 @@
+- hosts: workers
+  become: yes
+  tasks:
+    - name: install xfs for rook
+      apt:
+        name: xfsprogs
+        state: present
+
