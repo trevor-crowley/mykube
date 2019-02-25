@@ -11,11 +11,11 @@ spec:
   persistentVolumeReclaimPolicy: Retain 
   claimRef:
     namespace: default
-    name: data-ghost-mariadb-0
+    name: data-my-ghost-mariadb-0 
   storageClassName: nfs
   mountOptions:
     - hard
     - nfsvers=4.1
   nfs:
-    path: /mnt/nfs/home/k8s/ghost_db
+    path: /mnt/nfs/home/k8s/ghost-db
     server: 192.168.88.138
