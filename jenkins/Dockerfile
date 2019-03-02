@@ -2,6 +2,7 @@ from jenkins/jenkins:2.150.2
 
 # Distributed Builds plugins
 RUN /usr/local/bin/install-plugins.sh ssh-slaves
+RUN /usr/local/bin/install-plugins.sh scm-api
 
 # install Notifications and Publishing plugins
 RUN /usr/local/bin/install-plugins.sh email-ext
