@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: tcrowley/k8s:jenkins
+        image: tcrowley/jenkins
         imagePullPolicy: Always
         env:
         - name: JAVA_OPTS
@@ -29,4 +29,7 @@ spec:
       - name: regcred
       volumes:
       - name: jenkins-home
-        emptyDir: {}
+        nfs:
+          # URL for the NFS server
+          server: 192.168.88.138
+          path: /mnt/nfs/home/k8s/jenkins_home
