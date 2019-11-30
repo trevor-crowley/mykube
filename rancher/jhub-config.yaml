@@ -18,3 +18,9 @@ hub:
   extraConfig:
     jupyterlab: |
       c.Spawner.cmd = ['jupyter-labhub']
+auth:
+  type: github
+  github:
+    clientId: "111aaa87ea8b4b3b5489"
+    clientSecret: "349dbd8c8a30388457fbab5555a8cf7e1c29aff2"
+    callbackUrl: "https://jhub.tcrow.io/hub/oauth_callback"
