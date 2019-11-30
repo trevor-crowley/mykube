@@ -7,7 +7,8 @@ singleuser:
     # Inspect the Dockerfile at:
     # https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook/Dockerfile
     name: jupyter/scipy-notebook
-    tag: 2ce7c06a61a1
+    tag: ad3574d3c5c7
+    #    tag: 2ce7c06a61a1
   defaultUrl: "/lab"
   storage:
     capacity: "2Gi"

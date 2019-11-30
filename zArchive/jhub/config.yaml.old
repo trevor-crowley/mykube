@@ -1,0 +1,10 @@
+proxy:
+    secretToken: "8c317c1855d5dae17f28b75cd6eb8e8ec4b5711f19aa2f8eeb84360acb3ffd71"
+hub:
+  uid: 0
+  fsGid: 0
+ingress:
+  enabled: true
+  hosts:
+    - jhub.tcrow.io 
+  
