@@ -1,3 +1,6 @@
 *.iso
 *.crt
 *.key
+*.pem
+*.zip
+
