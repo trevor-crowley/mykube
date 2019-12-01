@@ -1,6 +1,10 @@
 proxy:
   secretToken: "a86812ddeccccf87c14148f4ab629f7991da41e77d4a6bf470943f0131c24917"
 singleuser:
+  lifecycleHooks:
+    postStart:
+      exec:
+        command: ["gitpuller", "https://github.com/HSCanada/datsci.git", "master", "datsci"]
   image:
     # Get the latest image tag at:
     # https://hub.docker.com/r/jupyter/datascience-notebook/tags/
@@ -8,9 +12,8 @@ singleuser:
     # https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook/Dockerfile
     name: "tcrow.io:5000/scipy-notebook"
     tag: "latest"
-    #    tag: ad3574d3c5c7
   imagePullSecret:
-    enabled: true
+    enabled: false
     registry: "tcrow.io:5000"
     username: "testuser"
     email: "testuser@tcrow.io"
