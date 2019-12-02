@@ -30,6 +30,6 @@ hub:
 auth:
   type: github
   github:
-    clientId: "111aaa87ea8b4b3b5489"
-    clientSecret: "349dbd8c8a30388457fbab5555a8cf7e1c29aff2"
+    clientId: "7ed97ca90ea254bf5849"
+    clientSecret: "2a751bcd93ab0071257d097eaaf3e915a57fc95b"
     callbackUrl: "https://jhub.tcrow.io/hub/oauth_callback"
