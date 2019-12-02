@@ -6,6 +6,7 @@ RUN conda install -y \
     pymssql \
     python-decouple \
     fbprophet \
+    plotly \
     nbgitpuller \
     pandas-datareader 
 
