@@ -1,0 +1,36 @@
+#cloud-config
+ 
+# Hostname management
+preserve_hostname: False
+hostname: k8s-w1
+fqdn: k8s-w1.tcrow.io
+ 
+# Users
+users:
+    - default
+    - name: trevor
+      groups: ['wheel']
+      shell: /bin/bash
+      sudo: ALL=(ALL) NOPASSWD:ALL
+      ssh-authorized-keys:
+        - ssh-ed25519 {add real key(s) here}
+ 
+# Configure where output will go
+output:
+  all: ">> /var/log/cloud-init.log"
+ 
+# configure interaction with ssh server
+ssh_genkeytypes: ['ed25519', 'rsa']
+ 
+# Install my public ssh key to the first user-defined user configured
+# in cloud.cfg in the template (which is centos for CentOS cloud images)
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/73woSF27UOZgx7LqjNo0u3MwYc3R9bj775qgdxtav VM Login ssh key
+ 
+# set timezone for VM
+timezone: America/Toronto
+ 
+# Remove cloud-init 
+runcmd:
+  - systemctl stop network && systemctl start network
+  - yum -y remove cloud-init
