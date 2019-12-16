@@ -1,5 +1,5 @@
 proxy:
-  secretToken: "b86812ddeccccf87c14148f4ab629f7991da41e77d4a6bf470943f0131c24917"
+  secretToken: "c86812ddeccccf87c14148f4ab629f7991da41e77d4a6bf470943f0131c24917"
 singleuser:
   image:
     # Get the latest image tag at:
@@ -9,7 +9,7 @@ singleuser:
     name: "tcrow.io:5000/scipy-notebook"
     tag: "latest"
   imagePullSecret:
-    enabled: false
+    enabled: true
     registry: "tcrow.io:5000"
     username: "testuser"
     email: "testuser@tcrow.io"
@@ -23,9 +23,9 @@ hub:
   extraConfig:
     jupyterlab: |
       c.Spawner.cmd = ['jupyter-labhub']
-auth:
-  type: github
-  github:
-    clientId: "111aaa87ea8b4b3b5489"
-    clientSecret: "349dbd8c8a30388457fbab5555a8cf7e1c29aff2"
-    callbackUrl: "https://jhub.tcrow.io/hub/oauth_callback"
+      #auth:
+      #  type: github
+      #  github:
+      #    clientId: "7ed97ca90ea254bf5849"
+      #    clientSecret: "241b61c4e0ffef4fd62bf505b540167d45e2c40f"
+      #    callbackUrl: "https://jhub.tcrow.io/hub/oauth_callback"
