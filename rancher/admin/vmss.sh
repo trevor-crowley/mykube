@@ -1,5 +1,9 @@
 #!/bin/bash
 # see https://blog.programster.org/kvm-external-snapshots
+if [ $# -eq 0 ]; then
+    echo "No arguments provided"
+    exit 1
+fi
 DOMAIN="$1"
 TIMESTAMP=`date +%s`
 SNAPSHOT_NAME=$TIMESTAMP
