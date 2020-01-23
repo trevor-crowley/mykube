@@ -23,6 +23,10 @@ else
 		bitnami_mediawiki \
 		> /nfs-root/backup/mysql/bitnami_mediawiki.sql'
 
+		echo "Backing up VMs..."
+		sudo sh -c '/usr/local/bin/vmss.sh k8s-c1'
+		sudo sh -c '/usr/local/bin/vmss.sh rsn1'
+
 		echo "Backing up NFS..."
 		time rsync -av --delete /nfs-root/ /mnt/backup/nfs-root/
 
