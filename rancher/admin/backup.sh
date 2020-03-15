@@ -1,6 +1,8 @@
 #!/bin/bash
 # backup VM, NFS, DBs
 
+MOUNT=//192.168.88.133/Data
+
 #rpm -qa > packages
 
 if mountpoint -q /mnt/backup
@@ -9,7 +11,8 @@ then
 else
 	echo "Backup Start: " $(date)
 
-	mount -t cifs -v //luigibase/Data /mnt/backup/ \
+#	mount -t cifs -v //luigibase/Data /mnt/backup/ \
+	mount -t cifs -v $MOUNT /mnt/backup/ \
 		-o credentials=/home/trevor/.smbcredentials,rw,hard,nosetuids,noperm,vers=1.0,sec=ntlm
 
 	if mountpoint -q /mnt/backup
@@ -24,8 +27,8 @@ else
 		> /nfs-root/backup/mysql/bitnami_mediawiki.sql'
 
 		echo "Backing up VMs..."
-		sudo sh -c '/usr/local/bin/vmss.sh k8s-c1'
-		sudo sh -c '/usr/local/bin/vmss.sh rsn1'
+		#sudo sh -c '/usr/local/bin/vmss.sh k8s-c1'
+		#sudo sh -c '/usr/local/bin/vmss.sh rsn1'
 
 		echo "Backing up NFS..."
 		time rsync -av --delete /nfs-root/ /mnt/backup/nfs-root/
