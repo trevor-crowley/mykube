@@ -13,3 +13,9 @@
   - name: install system updates for suse systems
     zypper: name=* state=latest  
     when: ansible_distribution == "openSUSE Leap"
+
+  - name: reboot needed? 
+    shell: needs-restarting -r
+    register: ps
+  - debug: var=ps.stdout_lines
+

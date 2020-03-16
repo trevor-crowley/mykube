@@ -1,3 +1,6 @@
+[servers]
+luigiserver
+luigilinux
 [controllers]
 rsn1
 k8s-c1  
