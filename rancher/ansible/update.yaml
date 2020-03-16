@@ -6,9 +6,9 @@
     yum: name=* state=latest update_cache=yes
     when: ansible_distribution == "CentOS"
   
-  - name: install system updates for ubuntu systems
+  - name: install system updates for debian systems
     apt: upgrade=dist update_cache=yes
-    when: ansible_distribution == "Ubuntu"
+    when: ansible_distribution == "Debian"
 
   - name: install system updates for suse systems
     zypper: name=* state=latest  

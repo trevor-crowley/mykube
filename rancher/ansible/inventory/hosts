@@ -7,3 +7,5 @@ k8s-c1
 [workers]
 k8s-w[1:3]
 k8s-w10
+[extra]
+luigipi
