@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- hosts: workers:controllers:servers
+  #- hosts: all
   gather_facts: yes
   become: false
   tasks:
