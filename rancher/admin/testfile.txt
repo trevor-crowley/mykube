@@ -1,0 +1,5 @@
+backup.sh
+cloudsend.sh
+gitpull.sh
+testfile.txt
+vmss.sh
