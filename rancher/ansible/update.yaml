@@ -1,0 +1,21 @@
+---
+- hosts: all
+  become: true
+  tasks:
+  - name: install system updates for centos systems
+    yum: name=* state=latest update_cache=yes
+    when: ansible_distribution == "CentOS"
+  
+  - name: install system updates for debian systems
+    apt: upgrade=dist update_cache=yes
+    when: ansible_distribution == "Debian"
+
+  - name: install system updates for suse systems
+    zypper: name=* state=latest  
+    when: ansible_distribution == "openSUSE Leap"
+
+  - name: reboot needed? 
+    shell: needs-restarting -r
+    register: ps
+  - debug: var=ps.stdout_lines
+
