@@ -1,5 +1,5 @@
 proxy:
-  secretToken: "c86812ddeccccf87c14148f4ab629f7991da41e77d4a6bf470943f0131c24917"
+  secretToken: "c86812ddeccccf87c14148f4ab629f7991da41e77d4a6bf470943f0131c24918"
 singleuser:
   image:
     # Get the latest image tag at:
@@ -27,5 +27,5 @@ auth:
   type: github
   github:
     clientId: "111aaa87ea8b4b3b5489"
-    clientSecret: "8990d0d17d1db9a8dd1592c5f3b1899c86f8f345"
+    clientSecret: "4f016056b85496108240eb08b2eb7cec6abd5c97"
     callbackUrl: "https://jhub.tcrow.io/hub/oauth_callback"
