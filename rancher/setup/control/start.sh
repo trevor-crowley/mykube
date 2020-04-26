@@ -5,5 +5,5 @@ docker run -d --restart=unless-stopped  \
       -v /etc/ssl/certs/domain.cert.pem:/etc/rancher/ssl/cert.pem \
       -v /etc/ssl/certs/private.key.pem:/etc/rancher/ssl/key.pem \
       -e AUDIT_LEVEL=1 \
-      rancher/rancher:v2.3.3 \
+      rancher/rancher:v2.4.2 \
       --no-cacerts
