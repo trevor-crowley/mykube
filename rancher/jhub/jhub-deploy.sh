@@ -5,5 +5,5 @@ NAMESPACE=jhub
 
 helm upgrade --install $RELEASE jupyterhub/jupyterhub \
   --namespace $NAMESPACE  \
-  --version=0.9-fe7b5df \
+  --version=0.8.2 \
   --values jhub-config.yaml

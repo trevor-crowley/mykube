@@ -1,0 +1,16 @@
+---
+  externalDatabase: 
+    database: "nextcloud"
+    enabled: "True"
+    host: "192.168.88.143"
+    password: "Booger889"
+    type: "postgresql"
+    user: "postgres"
+  nextcloud: 
+    host: "cloud.tcrow.io"
+    password: "booger"
+    username: "admin"
+  persistence: 
+    enabled: "false"
+    existingClaim: "nextcloud-ssd"
+
