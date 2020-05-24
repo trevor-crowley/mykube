@@ -22,7 +22,7 @@ singleuser:
 hub:
   extraConfig:
     jupyterlab: |
-      c.Spawner.cmd = ['jupyter-labhub']
+      c.Spawner.default_url = "/lab"
 auth:
   type: github
   github:
