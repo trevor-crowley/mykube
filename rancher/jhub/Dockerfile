@@ -8,10 +8,9 @@ RUN conda install -y \
     fbprophet \
     plotly \
     nbgitpuller \
-    jupytext \
+    ipywidgets \
     papermill \
     pandas-datareader 
 
 
-RUN conda remove --quiet --yes --force qt && \
-    conda clean -tipsy
+RUN conda clean -tipsy
