@@ -1,5 +1,5 @@
 
-FROM tcrow.io:5000/scipy-notebook:ad3574d3c5c7
+FROM tcrow.io:5000/scipy-notebook:903c591af249
 
 
 RUN conda install -y \
