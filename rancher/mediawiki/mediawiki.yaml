@@ -1,0 +1,9 @@
+---
+  externalDatabase: 
+    database: "bitnami_mediawiki"
+    host: "192.168.88.143"
+    password: "booger"
+    user: "bn_user"
+  mariadb: 
+    enabled: false
+  mediawikiHost: "wh.tcrow.io"

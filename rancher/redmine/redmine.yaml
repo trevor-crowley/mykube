@@ -1,0 +1,11 @@
+---
+  databaseType: "postgresql"
+  externalDatabase: 
+    host: "luigilinux"
+    name: "redmine"
+    password: "secret"
+    port: "5432"
+    user: "redmine"
+  mariadb: 
+    enabled: "false"
+

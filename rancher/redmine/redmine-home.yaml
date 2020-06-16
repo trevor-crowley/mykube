@@ -1,0 +1,10 @@
+---
+  databaseType: "postgresql"
+  externalDatabase: 
+    host: "luigiserver"
+    name: "bitnami_redmine"
+    password: "Booger889"
+    port: "5432"
+    user: "postgres"
+  mariadb: 
+    enabled: false

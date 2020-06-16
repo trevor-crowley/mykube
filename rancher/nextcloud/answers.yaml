@@ -11,6 +11,13 @@
     password: "booger"
     username: "admin"
   persistence: 
-    enabled: "false"
-    existingClaim: "nextcloud-ssd"
+    enabled: false
+
+owncloudHost=cloud.tcrow.io
+persistence.enabled=True
+externalDatabase.enabled=True
+externalDatabase.host=192.168.88.143
+externalDatabase.database=bitnami_owncloud
+externalDatabase.user=bn_user
+externalDatabase.password=booger
 
