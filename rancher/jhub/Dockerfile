@@ -10,6 +10,7 @@ RUN conda install -y \
     nbgitpuller \
     ipywidgets \
     papermill \
+    pydot \
     pandas-datareader 
 
 
