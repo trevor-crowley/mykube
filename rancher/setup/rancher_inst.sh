@@ -1,5 +1,3 @@
-helm install rancher rancher-latest/rancher \
+helm upgrade rancher rancher-stable/rancher \
   --namespace cattle-system \
-  --set hostname=tcrow.io \
-  --set ingress.tls.source=secret \
-  --set no-cacerts=true
+  --set hostname=rancher.home

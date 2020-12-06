@@ -1,0 +1,17 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-staging
+spec:
+  acme:
+    email: trevor_crowley@hotmail.com
+    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    #For Staging https://acme-staging-v02.api.letsencrypt.org/directory
+    #For Production: https://acme-v02.api.letsencrypt.org/directory
+    privateKeySecretRef:
+      name: account-private-key-staging
+    solvers:
+      - selector: {}
+        http01:
+          ingress:
+            class: nginx

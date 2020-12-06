@@ -1,8 +1,10 @@
 [servers]
 luigiserver.home
 luigilinux.home
+luigicache.home
 [controllers]
 k8s-c[1:3].home
 k3s-c[1:2].home
 [workers]
 k8s-w[1:3].home
+rancher.home
