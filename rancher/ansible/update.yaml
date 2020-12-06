@@ -3,7 +3,7 @@
   become: true
   tasks:
   - name: install system updates for centos systems
-    yum: name=* state=latest update_cache=yes
+    dnf: name=* state=latest update_cache=yes
     when: ansible_distribution == "CentOS"
   
   - name: install system updates for debian systems
