@@ -1,5 +1,5 @@
 
-FROM tcrow.io:5000/scipy-notebook:903c591af249
+FROM registry.tcrow.io/scipy-notebook:latest
 
 
 RUN conda install -y \
@@ -7,9 +7,7 @@ RUN conda install -y \
     python-decouple \
     fbprophet \
     plotly \
-    nbgitpuller \
     ipywidgets \
-    papermill \
     pydot \
     pandas-datareader 
 

@@ -1,3 +1,3 @@
-docker build -t tcrow.io:5000/scipy-notebook:latest .
-echo 'run docker push tcrow.io:5000/scipy-notebook:latest'
+docker build -t registry.tcrow.io/scipy-notebook:latest .
+echo 'run docker push registry.tcrow.io/scipy-notebook:latest'
 

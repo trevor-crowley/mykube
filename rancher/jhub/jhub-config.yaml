@@ -6,11 +6,11 @@ singleuser:
     # https://hub.docker.com/r/jupyter/datascience-notebook/tags/
     # Inspect the Dockerfile at:
     # https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook/Dockerfile
-    name: "tcrow.io:5000/scipy-notebook"
+    name: "registry.tcrow.io/scipy-notebook"
     tag: "latest"
   imagePullSecret:
     enabled: true
-    registry: "tcrow.io:5000"
+    registry: "registry.tcrow.io"
     username: "testuser"
     email: "testuser@tcrow.io"
     password: "testpassword"
