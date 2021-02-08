@@ -8,12 +8,6 @@ singleuser:
     # https://github.com/jupyter/docker-stacks/tree/master/datascience-notebook/Dockerfile
     name: "registry.tcrow.io/scipy-notebook"
     tag: "latest"
-  imagePullSecret:
-    enabled: true
-    registry: "registry.tcrow.io"
-    username: "testuser"
-    email: "testuser@tcrow.io"
-    password: "testpassword"
   defaultUrl: "/lab"
   storage:
     capacity: "2Gi"
