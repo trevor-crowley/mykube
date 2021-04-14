@@ -1,5 +1,5 @@
 
-FROM registry.tcrow.io/scipy-notebook:latest
+FROM registry.tcrow.io/scipy-notebook:565af01
 
 
 RUN conda install -y \
@@ -9,7 +9,7 @@ RUN conda install -y \
     plotly \
     ipywidgets \
     pydot \
-    pandas-datareader 
+    pandas-datareader \
+    geopandas
 
-
-RUN conda clean -tipsy
+RUN conda build purge-all 
