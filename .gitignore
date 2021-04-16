@@ -4,3 +4,4 @@
 *.pem
 *.zip
 tls/
+.DS_Store
